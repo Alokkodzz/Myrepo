@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "check disk usage"
-disk_size='df -h|grep /dev/root|awk '{print $5}'|cut -d "%" -f1
+disk_size='df -h|grep /dev/root|awk '{print $5}'|cut -d "%" -f1'
 echo "$disk_size% disk is filled"
 if [ $disk_size -gt 80]
 the
