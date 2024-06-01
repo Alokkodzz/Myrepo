@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 echo "To list files in path with size"
 path="$1"
 du -ah $path|sort -hr|head -5>size.txt
