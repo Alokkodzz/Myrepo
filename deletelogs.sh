@@ -4,7 +4,8 @@ path="$1"
 echo $path
 find $path -mtime +30 -delete
 echo $?
-if ["$?" == "0"]
+a=`0`
+if ["$?" -eq "$a"];
    then
       echo "Failed!"
    else
