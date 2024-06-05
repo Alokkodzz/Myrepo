@@ -6,7 +6,7 @@ find $path -mtime +30 -delete
 echo $?
 a=$0
 echo $a
-if [[$? -eq $a]];
+if [[$? -eq $a]]
    then
       echo "Failed!"
    else
